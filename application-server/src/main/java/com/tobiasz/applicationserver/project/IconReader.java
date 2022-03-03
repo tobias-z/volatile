@@ -21,7 +21,9 @@ public class IconReader extends Initializer {
     public IconReader() {
         executeInParallel(List.of(
             arrayOf(BASE_FOLDER),
+            arrayOf(String.format("%s-open", BASE_FOLDER)),
             arrayOf(BASE_FILE),
+            arrayOf(String.format("%s-open", BASE_FILE)),
             arrayOf("folder-app", "folder-application"),
             arrayOf("folder-intellij", "folder-.idea")
         ), strings -> {
@@ -47,6 +49,9 @@ public class IconReader extends Initializer {
             return svgIcon;
         }
         if (iconName.startsWith("folder")) {
+            if (iconName.endsWith("-open")){
+                return this.iconMap.get(String.format("%s-open", BASE_FOLDER));
+            }
             return this.iconMap.get(BASE_FOLDER);
         }
         return this.iconMap.get(BASE_FILE);
