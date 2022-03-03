@@ -1,0 +1,15 @@
+.btn {
+  -fx-padding: 10px;
+  -fx-background-color: #555555;
+}
+
+.split-pane > .split-pane-divider {
+  -fx-padding: 1px 1px;
+  -fx-border-width: 0;
+}
+
+.vbox {
+  -fx-padding: 0;
+  -fx-border-width: 0;
+  -fx-border-radius: 0;
+}

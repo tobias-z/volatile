@@ -1,0 +1,41 @@
+@import "theme.css";
+
+.titled-pane {
+  -fx-border-radius: 0;
+  -fx-padding: 0;
+  -fx-border-style: none;
+  -fx-min-width: 100%;
+  -fx-margin: 0;
+}
+
+.titled-pane > .title {
+  -fx-border-width: 0 0 0 0;
+  -fx-padding: 3 3 3 -15;
+  -fx-border-radius: 0;
+  -fx-background-insets: -1;
+  -fx-border-insets: 0;
+  -fx-background-color: -fx-sidepanel;
+  -fx-cursor: null;
+}
+
+.titled-pane > .content {
+  -fx-border-width: 0;
+  -fx-border-radius: 0;
+  -fx-padding: 0;
+  -fx-margin: 0;
+}
+
+.titled-pane > .title > .arrow-button .arrow {
+  -fx-background-color: null;
+  -fx-border-color: null;
+  -fx-progress-color: null;
+  -fx-effect: null;
+}
+
+.side-panel-title > .title {
+  -fx-padding: 3 3 3 0;
+}
+
+.sidepanel {
+  -fx-background-color: -fx-sidepanel;
+}

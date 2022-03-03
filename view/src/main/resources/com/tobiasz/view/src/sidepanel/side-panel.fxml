@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane stylesheets="../../styles/sidepanel.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" >
+  <ScrollPane fx:id="scrollPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" fitToHeight="true" fitToWidth="true">
+      <VBox cache="true" styleClass="vbox, sidepanel">
+        <fx:include source="side-panel-project.fxml" />
+        <padding>
+          <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+        </padding>
+      </VBox>
+  </ScrollPane>
+</AnchorPane>

@@ -1,0 +1,13 @@
+.root {
+  -fx-primary: #1e1d1d;
+  -fx-secondary: #363535;
+  -fx-sidepanel: #313030;
+  -fx-font-color: #c7c6c6;
+
+  -fx-font-family: "Broadway";
+  -fx-font-size: 13px;
+  -fx-background: -fx-secondary;
+  -fx-dark-text-color: -fx-font-color;
+  -fx-mid-text-color: -fx-font-color;
+  -fx-light-text-color: -fx-font-color;
+}
