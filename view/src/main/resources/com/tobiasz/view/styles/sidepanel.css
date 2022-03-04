@@ -10,7 +10,7 @@
 
 .titled-pane > .title {
   -fx-border-width: 0 0 0 0;
-  -fx-padding: 3 3 3 -15;
+  -fx-padding: 3 3 3 -2;
   -fx-border-radius: 0;
   -fx-background-insets: -1;
   -fx-border-insets: 0;

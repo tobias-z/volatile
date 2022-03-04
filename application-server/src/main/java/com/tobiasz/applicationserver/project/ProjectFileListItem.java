@@ -5,10 +5,17 @@ import static com.tobiasz.common.util.FXUtil.fitToParent;
 import com.tobiasz.applicationserver.ApplicationServer;
 import com.tobiasz.applicationserver.project.listener.DirectoryOpenListener;
 import java.io.File;
+import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
+import javafx.scene.control.TreeItem;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import lombok.Getter;
 
@@ -34,6 +41,7 @@ public class ProjectFileListItem {
             addOpenChangeListener(iconName, itemIcon, flowPane);
         }
         this.node.setExpanded(false);
+        this.node.setCollapsible(false);
     }
 
     private void addOpenChangeListener(String iconName, ImageView itemIcon, FlowPane flowPane) {
