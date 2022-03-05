@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class IconReaderIntegrationTest {
+class IconReaderTest {
 
     private IconReader iconReader;
     private static final String FILE_NAME = "java";

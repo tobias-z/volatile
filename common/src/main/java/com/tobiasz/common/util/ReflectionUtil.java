@@ -26,8 +26,6 @@ public class ReflectionUtil {
             .map(ClasspathHelper::forPackage)
             .reduce((c1, c2) -> {
                 Collection<URL> c3 = new HashSet<>();
-                System.out.println(c1);
-                System.out.println(c2);
                 c3.addAll(c1);
                 c3.addAll(c2);
                 return c3;

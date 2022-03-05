@@ -8,4 +8,9 @@ module com.tobiasz.applicationserver {
     exports com.tobiasz.applicationserver.project;
     exports com.tobiasz.applicationserver.setup;
     exports com.tobiasz.applicationserver.project.listener;
+
+    opens com.tobiasz.applicationserver.setup;
+    opens com.tobiasz.applicationserver.project;
+    opens com.tobiasz.applicationserver.project.listener;
+    opens com.tobiasz.applicationserver;
 }
