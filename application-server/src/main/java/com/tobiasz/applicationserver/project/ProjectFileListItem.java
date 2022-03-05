@@ -8,6 +8,7 @@ import java.io.File;
 import javafx.event.EventHandler;
 import javafx.event.EventType;
 import javafx.geometry.Pos;
+import javafx.scene.CacheHint;
 import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
 import javafx.scene.control.TreeItem;
@@ -31,6 +32,8 @@ public class ProjectFileListItem {
         itemIcon.setPreserveRatio(true);
         itemIcon.setFitWidth(18);
         itemIcon.setFitHeight(18);
+        itemIcon.setCache(true);
+        itemIcon.setCacheHint(CacheHint.SPEED);
         FlowPane flowPane = getFlowPane(file, itemIcon);
         flowPane.setHgap(3);
         if (directoriesDeep != 1) {

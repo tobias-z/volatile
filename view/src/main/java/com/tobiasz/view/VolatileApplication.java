@@ -5,7 +5,10 @@ import com.tobiasz.view.loader.StyleSheetLoader;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
 import javafx.stage.Stage;
 
 public class VolatileApplication extends Application {

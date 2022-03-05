@@ -15,6 +15,7 @@ public class ActiveProject extends Initializer {
     @Override
     public void init() {
         String activeDir = System.getProperty("user.dir");
+        System.out.println(activeDir);
         File root = new File(activeDir);
         this.rootProjectFile = new ProjectFile(root);
         this.rootProjectFile.createProject(this.projectFileMap, 1);
