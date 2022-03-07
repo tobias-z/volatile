@@ -5,10 +5,14 @@ import static com.tobiasz.common.util.ReflectionUtil.getConfigurationBuilder;
 import static com.tobiasz.common.util.ThreadExecution.executeInParallel;
 
 import java.lang.reflect.Modifier;
+import lombok.RequiredArgsConstructor;
 import org.reflections.Reflections;
 import org.reflections.scanners.Scanners;
 
-public record Setup(InitializerFactory initializerFactory) {
+@RequiredArgsConstructor
+public class Setup {
+
+    private final InitializerFactory initializerFactory;
 
     public void initializeComponents() {
         var reflections = new Reflections(getConfigurationBuilder(Scanners.SubTypes));
