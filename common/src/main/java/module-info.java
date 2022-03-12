@@ -5,6 +5,7 @@ module com.tobiasz.common {
     requires batik.anim;
     requires batik.transcoder;
     requires batik.util;
+    requires batik.bridge;
     requires commons.io;
     requires java.desktop;
 

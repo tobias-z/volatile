@@ -5,8 +5,12 @@ import static java.lang.Thread.currentThread;
 import java.io.File;
 import java.net.URL;
 import javafx.scene.Scene;
+import lombok.RequiredArgsConstructor;
 
-public record StyleSheetLoader(Scene scene) {
+@RequiredArgsConstructor
+public class StyleSheetLoader {
+
+    private final Scene scene;
 
     public void load() {
         ClassLoader loader = currentThread().getContextClassLoader();

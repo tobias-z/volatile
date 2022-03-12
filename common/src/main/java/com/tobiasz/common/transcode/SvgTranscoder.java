@@ -20,13 +20,13 @@ public class SvgTranscoder {
         final BufferedImage[] imagePointer = new BufferedImage[1];
 
         File cssFile = File.createTempFile("batik-default-override-", ".css");
-        FileUtils.writeStringToFile(cssFile, """
-            svg {
-                shape-rendering: geometricPrecision;
-                text-rendering:  geometricPrecision;
-                color-rendering: optimizeQuality;
-                image-rendering: optimizeQuality;
-            }""");
+        FileUtils.writeStringToFile(cssFile, "\n"
+            + "svg {"
+            + "    shape-rendering: geometricPrecision;"
+            + "    text-rendering:  geometricPrecision;"
+            + "    color-rendering: optimizeQuality;"
+            + "    image-rendering: optimizeQuality;"
+            + "}");
 
         TranscodingHints transcoderHints = new TranscodingHints();
         transcoderHints.put(ImageTranscoder.KEY_XML_PARSER_VALIDATING, Boolean.FALSE);

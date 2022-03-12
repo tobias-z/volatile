@@ -43,18 +43,18 @@ public class IconReader extends Initializer {
         return this.findIcon(iconName);
     }
 
-    private Image findIcon(String iconName) {
+    protected Image findIcon(String iconName) {
         Image svgIcon = this.iconMap.get(iconName);
         if (nonNull(svgIcon)) {
             return svgIcon;
         }
-        if (iconName.startsWith("folder")) {
-            if (iconName.endsWith("-open")){
-                return this.iconMap.get(String.format("%s-open", BASE_FOLDER));
-            }
-            return this.iconMap.get(BASE_FOLDER);
+        if (!iconName.startsWith("folder")) {
+            return this.iconMap.get(BASE_FILE);
         }
-        return this.iconMap.get(BASE_FILE);
+        if (iconName.endsWith("-open")) {
+            return this.iconMap.get(String.format("%s-open", BASE_FOLDER));
+        }
+        return this.iconMap.get(BASE_FOLDER);
     }
 
     private void loadIcon(String iconName, String... abbreviations) {
