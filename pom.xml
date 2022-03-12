@@ -89,8 +89,8 @@
     </dependency>
     <dependency>
       <groupId>org.testfx</groupId>
-      <artifactId>testfx-junit</artifactId>
-      <version>4.0.1-alpha</version>
+      <artifactId>testfx-junit5</artifactId>
+      <version>4.0.16-alpha</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -101,7 +101,7 @@
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjtools</artifactId>
-      <version>1.9.7</version>
+      <version>1.9.8</version>
     </dependency>
   </dependencies>
 
